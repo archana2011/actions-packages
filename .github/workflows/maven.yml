@@ -10,7 +10,7 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
+  build-a:
 
     runs-on: ubuntu-latest
 
@@ -23,7 +23,7 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
   
-  deploy:
+  deploy-a:
     runs-on: ubuntu-latest
     
     steps:
